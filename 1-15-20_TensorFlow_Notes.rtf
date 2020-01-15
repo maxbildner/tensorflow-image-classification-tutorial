@@ -1,0 +1,152 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 Helvetica-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;\red25\green60\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c93333;\cssrgb\c12594\c35385\c100000;}
+\margl1440\margr1440\vieww11740\viewh14020\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 1/15/20\
+Tensor Flow Notes\
+freeCodeCamp.org Youtube Video:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.youtube.com/watch?v=6g4O5UOH304"}}{\fldrslt 
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://www.youtube.com/watch?v=6g4O5UOH304}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b \cf3 Tensor Flow 
+\f0\b0 \cf0 \
+- an open source python library for machine learning (created by Google) and number crunching\
+\
+
+\f2\b Machine Learning
+\f0\b0 \
+\
+
+\f2\b Deep Learning
+\f0\b0 \
+\
+
+\f2\b \cf3 Neural Network
+\f0\b0 \cf0 \
+- a bunch of layers of neurons that are connected in some way\
+- each \'93neuron\'94 can either fire on, or off\
+- a neuron can also cause its connected neurons to fire or not fire\
+\
+
+\f2\b \cf3 Fully Connected Neural Network
+\f0\b0 \cf0 \
+- Each neuron in one layer is connected to each neuron in the next layer only 1 time\
+- most networks are like this\
+\
+
+\f2\b \cf3 Input Layer
+\f0\b0 \cf0 \
+- First layer of a neural network\
+\
+
+\f2\b \cf3 Output Layer
+\f0\b0 \cf0 \
+- Last layer of a neural network\
+- could have 1 or multiple neurons (depends on problem we\'92re trying to solve)\
+\
+
+\f2\b \cf3 Weight
+\f0\b0 \cf0 \
+- ?\
+\
+
+\f2\b \cf3 Simple Snake Game Example Apply Tensor Flow
+\f0\b0 \cf0 \
+- objective is keep snake alive (snake can\'92t bump into wall or self)\
+- input\'92s will be to check if there\'92s obstacle to left, in front, or right of snakes head\
+- 4 neuron inputs: left, front, right, and recommended direction\
+- Values for left, front, right neurons:\
+	0 = no obstacle\
+	1 = obstacle\
+- Values for recommended direction neuron:\
+	-1 = left\
+	0 = front\
+	1 = right\
+- 1 Neuron Output. Values can be:\
+	0 = don\'92t follow recommended direction\
+	1 = follow recommended direction\
+\
+
+\f2\b \cf3 Calculating the Output Layer Value
+\f0\b0 \cf0 \
+- Take the weighted sum of each input value * respective weight
+\f2\b \
+	
+\f0\b0 Output Layer Value = SUM (Vi*Wi) = V1*W1 + V2*W2 + V3*W3 + V4*W4
+\f2\b \
+\
+\cf3 Biases\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b0 \cf0 - denoted by c\
+- constant value for each weight\
+- value that we add or subtract to each weight\
+- ? why does there need to be both weights and biases, why not just 1?
+\f2\b \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 Output Layer Value with Biases\cf0 \
+	
+\f0\b0 Output Layer Value = V1*W1 + V2*W2 + V3*W3 + V4*W4 + b1 + b2 + b3 + b4
+\f2\b \
+	\
+\cf3 Training\cf0  a neural network
+\f0\b0 \
+- Ex. we play 1000 games of this snake game\
+- we\'92ll randomly decided a recommended direction at first\
+- then as each game is played, the program will adjust the biases and weights\
+to get a better and better output\
+\
+
+\f2\b \cf3 Activation Functions
+\f0\b0 \cf0 \
+- Non-linear function so we can have a more complex function\
+- Ex. Sigmoid Function\
+\
+
+\f2\b \cf3 Loss Function
+\f0\b0 \cf0 \
+- tells you how wrong your answer is\
+- gives us a degree of how wrong/right we were\
+- not linear function\
+- we compare the actual output of model with what it should be\
+and based on that, try to adjust weights and biases to get closer to what output should be\
+\
+
+\f2\b \cf3 Hidden Layers
+\f0\b0 \cf0 \
+- layers in-between input and output layer\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
