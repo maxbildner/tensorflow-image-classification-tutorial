@@ -1,1 +1,1 @@
-# tensorflow-snake-tutorial
+# tensorflow-image-classification-tutorial
